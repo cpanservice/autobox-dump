@@ -1,6 +1,7 @@
 package autobox::dump;
 # vi: ht=4 sw=4 ts=4 et :
 
+use 5.006;
 use warnings;
 use strict;
 

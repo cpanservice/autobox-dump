@@ -1,3 +1,4 @@
+use 5.006;
 use strict;
 use warnings;
 use Module::Build;
@@ -9,7 +10,8 @@ my $builder = Module::Build->new(
     dist_version_from   => 'lib/autobox/dump.pm',
     build_requires      => {
         'Test::More' => 0,
-	'autobox'    => 0,
+        'autobox'    => 0,
+        'perl' => 5.006,
     },
     add_to_cleanup      => [ 'autobox-dump-*' ],
     create_makefile_pl => 'traditional',
